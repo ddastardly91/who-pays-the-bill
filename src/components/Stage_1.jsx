@@ -32,7 +32,6 @@ const Stage1 = () => {
       return true;
    };
 
-   console.log(context.state);
    return (
       <>
          <Form onSubmit={handleSubmit} className="mt-4">
@@ -77,7 +76,7 @@ const Stage1 = () => {
                      </ul>
                      <div
                         className="action_button"
-                        onClick={() => alert("Stage 2")}
+                        onClick={() => context.next()}
                      >
                         NEXT
                      </div>
