@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Stage2 = () => {
-  return (
-    <div>Stage 2</div>
-  )
-}
+    return <div>Stage 2</div>;
+};
 
-export default Stage2
+export default Stage2;
