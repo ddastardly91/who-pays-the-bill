@@ -7,17 +7,17 @@ import Stage1 from "./components/Stage_1";
 import Stage2 from "./components/Stage_2";
 
 const App = () => {
-    const context = useContext(MyContext);
+   const context = useContext(MyContext);
 
-    return (
-        <div className="wrapper">
-            <div className="center-wrapper">
-                <h1>Who Pays the Bill?</h1>
+   return (
+      <div className="wrapper">
+         <div className="center-wrapper">
+            <h1>Who Pays the Bill?</h1>
 
-                {context.state.stage === 1 ? <Stage1 /> : <Stage2 />}
-            </div>
-        </div>
-    );
+            {context.state.stage === 1 ? <Stage1 /> : <Stage2 />}
+         </div>
+      </div>
+   );
 };
 
 export default App;
